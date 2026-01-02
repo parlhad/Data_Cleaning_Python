@@ -62,10 +62,9 @@ Used for:
 ## 📥 Loading the Dataset
 
 ### `read_csv()`
-
-```python
+```
 pd.read_csv("file.csv")
-
+```
 ### Purpose:
 Reads a CSV file and converts it into a DataFrame.
 
@@ -75,19 +74,6 @@ This is the first step of any data analysis process.
 # Project Title
 
 A brief description of what this project does and who it's for
-
-
-### `read_csv()`
-
-
-```
-pd.read_csv("file.csv")
-```
-### Purpose:
-Reads a CSV file and converts it into a DataFrame.
-
-### Why important:
-This is the first step of any data analysis process.
 
 ### Understanding the Data Structure
 ```
