@@ -60,7 +60,7 @@ Used for:
 ---
 
 ## 📥 Loading the Dataset
-
+ <img src="AdobeStock_1716819827_Preview.jpeg" alt="Data Clening" width="1000"/>
 ### `read_csv()`
 ```
 pd.read_csv("file.csv")
