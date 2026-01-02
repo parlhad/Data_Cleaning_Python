@@ -72,57 +72,79 @@ Reads a CSV file and converts it into a DataFrame.
 ### Why important:
 This is the first step of any data analysis process.
 
-###🔍 Understanding the Data Structure
+# Project Title
+
+A brief description of what this project does and who it's for
+
+
+### `read_csv()`
+
+
+```
+pd.read_csv("file.csv")
+```
+### Purpose:
+Reads a CSV file and converts it into a DataFrame.
+
+### Why important:
+This is the first step of any data analysis process.
+
+### Understanding the Data Structure
+```
 head()
+```
+### Displays first few rows of data.
 
-###Displays first few rows of data.
-
-``` tail()
+``` 
+tail()
  ```
 
 ### Displays last few rows of data.
 
-```shape
+```
+shape
 ```
 ### Returns number of rows and columns.
 
-```info()
+```
+info()
 ```
 ### Provides:
 
-```Column names
+```
+Column names
 ```
 ### Data types
 
 Non-null counts
 
-```describe()
+```
+describe()
 ```
 ### Gives statistical summary:
+#### Mean
 
-``` Mean
+#### Median
+
+#### Standard deviation
+
+#### Min & Max values
+
+##  Handling Missing Values
+
+### Missing values are very common in real datasets.
 ```
-Median
-
-Standard deviation
-
-Min & Max values
-
-🚫 Handling Missing Values
-
-Missing values are very common in real datasets.
-
 isnull()
-
-Detects missing values.
-
+```
+### Detects missing values.
+```
 sum()
-
-Counts missing values per column.
-
+```
+### Counts missing values per column.
+```
 fillna()
-
-Fills missing values using:
+```
+### Fills missing values using:
 
 Mean
 
@@ -131,47 +153,52 @@ Median
 Mode
 
 Constant values
-
+```
 df['column'].fillna(df['column'].mean(), inplace=True)
-
+```
+```
 dropna()
+```
+### Removes rows or columns containing missing values.
 
-Removes rows or columns containing missing values.
+### When to drop:
 
-When to drop:
+#### If missing values are very high
 
-If missing values are very high
+####  If column is not useful
 
-If column is not useful
+### Removing Duplicate Data
 
-🔁 Removing Duplicate Data
+```
 duplicated()
+```
+### Identifies duplicate rows.
 
-Identifies duplicate rows.
-
+```
 drop_duplicates()
+```
+### Removes duplicate records.
 
-Removes duplicate records.
+## Why important:
+### Duplicates can:
 
-Why important:
-Duplicates can:
+##### Skew analysis
 
-Skew analysis
+#### Bias machine learning models
 
-Bias machine learning models
+## Data Type Conversion
 
-🔄 Data Type Conversion
-
-Incorrect data types can cause errors in analysis.
-
+### Incorrect data types can cause errors in analysis.
+```
 astype()
+```
 
-Converts data types.
-
+### Converts data types.
+```
 df['column'] = df['column'].astype(int)
+```
 
-
-Common conversions:
+## Common conversions:
 
 Object → Integer
 
@@ -179,82 +206,84 @@ Object → Float
 
 Object → Datetime
 
-📏 Handling Outliers
+## Handling Outliers
 
-Outliers are extreme values that distort analysis.
+### Outliers are extreme values that distort analysis.
 
-Methods Used:
+### Methods Used:
 
-IQR (Interquartile Range)
+#### 1. IQR (Interquartile Range)
 
-Z-score (conceptually)
+#### 2. Z-score (conceptually)
 
-Why handle outliers:
+### Why handle outliers:
 
-Improve model accuracy
+#### Improve model accuracy
 
-Reduce noise
+#### Reduce noise
 
-Better visualization
+#### Better visualization
 
-🧮 Feature Engineering Basics
+## Feature Engineering Basics
 
-Feature engineering improves model learning.
+### Feature engineering improves model learning.
 
-Examples:
+### Examples:
 
-Creating new columns
+#### Creating new columns
 
-Binning numerical values
+#### Binning numerical values
 
-Encoding categorical data
+#### Encoding categorical data
 
-🔗 Combining and Reshaping Data
+##  Combining and Reshaping Data
+
+```
 merge()
-
-Combines datasets based on a key.
-
+```
+## Combines datasets based on a key.
+```
 concat()
-
-Joins datasets vertically or horizontally.
-
+```
+## Joins datasets vertically or horizontally.
+```
 groupby()
-
-Used for aggregation and analysis.
-
+```
+## Used for aggregation and analysis.
+```
 df.groupby('category')['value'].mean()
+```
+# Data Validation & Final Checks
 
-📊 Data Validation & Final Checks
+### Before moving to EDA or ML:
 
-Before moving to EDA or ML:
+###  Check missing values again
 
-Check missing values again
+### Verify data types
 
-Verify data types
+### Ensure consistency
 
-Ensure consistency
+### Validate ranges and categories
 
-Validate ranges and categories
+## Outcome of This Notebook
 
-🚀 Outcome of This Notebook
+### After completing all steps:
 
-After completing all steps:
+### Data becomes clean and structured
 
-Data becomes clean and structured
+### Ready for Exploratory Data Analysis (EDA)
 
-Ready for Exploratory Data Analysis (EDA)
+### Suitable for Machine Learning models
 
-Suitable for Machine Learning models
+### Reliable for dashboarding and reporting
 
-Reliable for dashboarding and reporting
+##  Key Learning Summary
 
-🧠 Key Learning Summary
+### Data cleaning is the backbone of Data Science
 
-Data cleaning is the backbone of Data Science
+### Pandas is the most powerful tool for preprocessing
 
-Pandas is the most powerful tool for preprocessing
-
-Clean data improves insights and predictions
+### Clean data improves insights and predictions
 
 Every ML project starts with data cleaning
 
