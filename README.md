@@ -1,7 +1,7 @@
 # 🧹 Data Cleaning with Python – Complete Practical Guide
 
 ## 📌 Overview
-
+<img src="spotify_logo.jpg" alt="Spotify Logo" width="1000"/>
 This notebook **DATA_CLEANING_WITH_PYTHON.ipynb** focuses on one of the most critical phases of Data Science — **Data Cleaning and Preprocessing**.
 
 Real-world data is rarely clean. It often contains:
