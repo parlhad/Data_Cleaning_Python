@@ -1,87 +1,67 @@
-# 💫 Hi, I'm Pralhad Jadhav  
+# 🧹 Data Cleaning with Python – Complete Practical Guide
 
-🚀 **CSE Engineering Student | Aspiring Data Analyst | Visualization Enthusiast**  
+## 📌 Overview
 
-I’m a Computer Science Engineering student with a strong passion for **Data Analytics**.  
-I enjoy transforming **raw, complex datasets into clear, meaningful insights** through well-designed dashboards and visualizations.
+This notebook **DATA_CLEANING_WITH_PYTHON.ipynb** focuses on one of the most critical phases of Data Science — **Data Cleaning and Preprocessing**.
 
-My curiosity for data, combined with a structured analytical mindset, drives me to continuously improve my skills and work on real-world projects.
+Real-world data is rarely clean. It often contains:
+- Missing values  
+- Duplicate records  
+- Incorrect data types  
+- Inconsistent entries  
+- Outliers and noise  
 
----
-
-## 🎯 What I Do  
-- 📊 Convert raw data into **actionable insights**  
-- 📈 Design **interactive dashboards** that tell a story  
-- 🧠 Simplify complex concepts using **data visualization**  
-- 🔍 Analyze trends and patterns to support decision-making  
+This notebook demonstrates **how to identify, clean, and prepare raw data** using Python libraries so that it becomes suitable for **analysis, visualization, and machine learning models**.
 
 ---
 
-## 🛠️ Skills & Tools  
+## 🎯 Objective of This Notebook
 
-**Data Analysis & Visualization**  
-- MS Excel (Advanced formulas, dashboards)  
-- Power BI  
-- Tableau  
-
-**Databases**  
-- SQL  
-- MySQL  
-
-**Programming & Libraries**  
-- Python  
-- Pandas  
-- NumPy  
-
-**Core Concepts**  
-- Statistics  
-- Data Cleaning & Preprocessing  
-- Exploratory Data Analysis (EDA)  
+The main objectives are:
+- To understand **why data cleaning is important**
+- To learn **step-by-step data preprocessing**
+- To apply **Pandas and NumPy functions practically**
+- To prepare data for **EDA and ML models**
 
 ---
 
-## 📚 Currently Working On  
-- 📌 Building **Excel & Power BI dashboards**  
-- 📌 Strengthening **SQL & Python for data analysis**  
-- 📌 Improving **statistical understanding** for real-world use cases  
-- 📌 Preparing for **Data Analyst internships & roles**  
+## 🧠 Why Data Cleaning is Important
+
+> “Garbage In = Garbage Out”
+
+If data is not cleaned properly:
+- Analysis becomes misleading
+- Visualizations show wrong insights
+- Machine learning models perform poorly
+
+Data cleaning ensures:
+- Accuracy  
+- Consistency  
+- Reliability  
+- Better model performance  
 
 ---
 
-## 💡 What Motivates Me  
-The joy of turning **numbers into knowledge** keeps me going.  
-I love the creative side of analytics—where **logic meets design**—and where insights make data easy to understand for everyone.
+## 🛠️ Libraries Used
+
+### 📦 Pandas
+Used for:
+- Reading datasets
+- Handling missing values
+- Data manipulation
+- Filtering and aggregation
+
+### 📦 NumPy
+Used for:
+- Numerical operations
+- Handling arrays
+- Mathematical calculations
 
 ---
 
-## 🎬 Beyond Data  
-When I’m not working with data, you’ll find me:  
-- 🎥 Watching movies & web series  
-- 🎵 Listening to music  
-- 🌍 Exploring what’s trending in tech & analytics  
+## 📥 Loading the Dataset
 
----
+### `read_csv()`
 
-## 🌐 Connect With Me  
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://linkedin.com/in/www.linkedin.com/in/parlhad-jadhav-aa9290260)
-
----
-
-## 📊 GitHub Stats  
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=PralhadJadhav&theme=dark&hide_border=false)
-![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=PralhadJadhav&theme=dark&hide_border=false)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=PralhadJadhav&theme=dark&hide_border=false&layout=compact)
-
----
-
-## 🏆 GitHub Trophies  
-
-![GitHub Trophies](https://github-profile-trophy.vercel.app/?username=PralhadJadhav&theme=radical&no-frame=false&no-bg=true&margin-w=4)
-
----
-
-![Profile Views](https://visitcount.itsvg.in/api?id=PralhadJadhav&icon=0&color=0)
-
-⭐ *Always learning, always improving — one dataset at a time.*
+```python
+pd.read_csv("file.csv")
