@@ -288,13 +288,4 @@ Clean data leads to correct insights and better decisions.
 
 
 ---
-
-### 🔥 If you want next
-I can:
-- Write **README for EDA notebook**
-- Create **ML project README**
-- Add **code-to-theory mapping**
-- Convert this into **internship-ready project documentation**
-
-Just tell me 👍
-
+]
